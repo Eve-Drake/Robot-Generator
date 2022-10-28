@@ -19,3 +19,7 @@ img:hover{
   box-shadow: 4px 5px lightblue;
   cursor: pointer;
 }
+
+input{
+  margin: 0.5em;
+}

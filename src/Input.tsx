@@ -9,7 +9,7 @@ const Input = ({setRobotStringArray, robotStringArray}: Props) => {
     const [text, setText] =  useState<string>('')
 
     const addNewRobot = () =>{
-        setRobotStringArray([...robotStringArray, text])
+        setRobotStringArray([text, ...robotStringArray])
         setText('')
     }
 
