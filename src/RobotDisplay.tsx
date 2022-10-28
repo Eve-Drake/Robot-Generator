@@ -1,14 +1,17 @@
 import React from 'react'
 
 interface Props {
-    robotStringArray: string[]
+    robotStringArray: string[],
+    deleteRobot: (name: string) => void
 }
 
-const RobotDisplay = ({robotStringArray} : Props) => {
+const RobotDisplay = ({robotStringArray, deleteRobot} : Props) => {
   return (
     <div>
         {robotStringArray.map((robotString, index)=>(
-            <img  key={index} src={'https://robohash.org/' + robotString} />
+            <div key={index} className='robotImages'>
+                <img onClick={()=>deleteRobot(robotString)}  src={'https://robohash.org/' + robotString} />
+            </div>
         ))}
     </div>
   )
