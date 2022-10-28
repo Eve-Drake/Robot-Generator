@@ -9,10 +9,15 @@
   text-align: center;
 }
 
+.robotImages{
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+
 img{
+  max-width: 20vw;
   border: 3px solid black;
   border-radius: 5px;
-  max-height: 20%;
 }
 
 img:hover{

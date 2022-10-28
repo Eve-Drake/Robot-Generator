@@ -7,9 +7,9 @@ interface Props {
 
 const RobotDisplay = ({robotStringArray, deleteRobot} : Props) => {
   return (
-    <div>
+    <div className='robotImages'>
         {robotStringArray.map((robotString, index)=>(
-            <div key={index} className='robotImages'>
+            <div key={index} >
                 <img onClick={()=>deleteRobot(robotString)}  src={'https://robohash.org/' + robotString} />
             </div>
         ))}
