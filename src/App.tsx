@@ -4,7 +4,7 @@ import Input from './Input'
 import RobotDisplay from './RobotDisplay'
 
 function App() {
-  const [robotStringArray, setRobotStringArray] = useState<string[]>(['Hello', 'Test', 'Nice', 'Frit', 'Tests'])
+  const [robotStringArray, setRobotStringArray] = useState<string[]>([])
 
   const deleteRobot = (name:string) =>{
     setRobotStringArray(robotStringArray.filter(el => el != name))
